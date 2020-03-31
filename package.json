@@ -1,0 +1,35 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon app.js",
+    "build": "cross-env NODE_ENV=prd nodemon app.js",
+    "prd": "cross-env NODE_ENV=prd pm2 start app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "body-parser": "^1.19.0",
+    "boom": "^7.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-validator": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
