@@ -16,7 +16,7 @@ const router = express.Router()
 router.use(jwtAuth)
 
 router.get('/', function(req, res) {
-  res.send('欢迎学习小慕读书管理后台')
+  res.send('欢迎 WiKi 后台管理')
 })
 
 router.use('/user', userRouter)
